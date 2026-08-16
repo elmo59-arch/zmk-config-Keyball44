@@ -44,7 +44,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: SCROLL}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: SYM}
-  - $$mdi:backspace-reverse-outline$$
+  - LANG1
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
@@ -89,7 +89,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LANG2
   SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
@@ -103,12 +103,12 @@ layers:
   - (
   - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '[', s: '{'}
