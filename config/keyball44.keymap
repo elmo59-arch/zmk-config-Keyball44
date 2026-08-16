@@ -124,6 +124,6 @@
     };
 };
 
-/ {
-    trackball_listener { /delete-property/ automouse-layer; };
+&trackball {
+    /delete-property/ automouse-layer;
 };
