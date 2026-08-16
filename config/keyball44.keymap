@@ -124,6 +124,8 @@
     };
 };
 
+#if defined(SHIELD_KEYBALL44_RIGHT)
 &trackball {
     /delete-property/ automouse-layer;
 };
+#endif
