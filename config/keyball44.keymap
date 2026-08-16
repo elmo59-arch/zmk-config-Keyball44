@@ -123,3 +123,7 @@
         };
     };
 };
+
+&trackball_listener {
+    /delete-property/ automouse-layer;
+};
