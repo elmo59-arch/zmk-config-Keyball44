@@ -15,13 +15,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
@@ -58,7 +58,7 @@
 &kp ESCAPE      &kp Q     &kp W            &mt LG(E) E  &kp R        &kp T                       &kp Y        &kp U  &kp I      &kp O    &kp P      &kp DELETE
 &kp BACKSPACE   &kp A     &mt LG(LS(S)) S  &kp D        &kp F        &kp G                       &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &kp Z     &mt LC(X) X      &mt LC(C) C  &mt LC(V) V  &kp B                       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT  &lt 5 SPACE      &lt 3 TAB    &lt 4 LCTRL             &lt 1 RIGHT_ALT  &lt 2 ENTER                                        &kp LANG1
+&kp LGUI        &kp LALT  &mt LCTRL SPACE  &lt 3 TAB    &mo 4                   &lt 1 RIGHT_ALT  &lt 2 ENTER                                        &kp LANG1
             >;
         };
 
@@ -95,10 +95,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5              &kp N6         &kp N7     &kp N8  &kp N9     &kp N0     &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-&none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      &none   &none      &none      &none
-&trans  &trans          &trans          &trans        &trans                 &trans  &trans                                                  &none
+&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5               &kp N6         &kp N7     &kp N8  &kp N9     &kp N0     &none
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &lt 5 G              &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
+&none   &none           &none           &none         &none      &none                &kp PAGE_DOWN  &none      &none   &none      &none      &none
+&trans  &trans          &trans          &trans        &trans                  &trans  &trans                                                  &none
             >;
         };
 
@@ -125,7 +125,7 @@
 };
 
 #if defined(SHIELD_KEYBALL44_RIGHT)
-&trackball {
-    /delete-property/ automouse-layer;
-};
+
+&trackball { /delete-property/ automouse-layer; };
+
 #endif
