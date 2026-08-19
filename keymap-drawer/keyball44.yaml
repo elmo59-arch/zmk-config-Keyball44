@@ -315,3 +315,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [10, 11]
+  k: $$mdi:progress-download$$
+- p: [12, 13]
+  k: $$mdi:progress-download$$
