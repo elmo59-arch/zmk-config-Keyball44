@@ -49,6 +49,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <10 11>;
+        };
+
+        bootlaoder2 {
+            bindings = <&bootloader>;
+            key-positions = <12 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
