@@ -58,7 +58,7 @@ layers:
   - '9'
   - '0'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -70,20 +70,20 @@ layers:
   - Ctl+Sft+L
   - {t: Alt+=, s: Alt++}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - F2
   - F4
   - {t: Alt+;, s: 'Alt+:'}
   - Ctl+Sft+V
-  - Ctl+END
+  - Ctl+Sft+$$mdi:arrow-down-bold$$
   - Ctl+D
   - Ctl+R
   - Ctl+$$mdi:keyboard-space$$
   - Sft+$$mdi:keyboard-space$$
   - Ctl+Sft+END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
