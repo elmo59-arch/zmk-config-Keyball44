@@ -70,8 +70,8 @@
             label = "QWRT";
             bindings = <
 &kp ESCAPE      &kp Q        &kp W            &mt LG(E) E      &kp R        &kp T                       &kp Y        &kp U  &kp I      &kp O    &kp P      &kp DELETE
-&kp BACKSPACE   &mt A LC(A)  &mt LG(LS(S)) S  &kp D            &kp F        &kp G                       &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &mt Z LC(Z)  &mt LC(X) X      &mt LC(C) C      &mt LC(V) V  &kp B                       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+&kp BACKSPACE   &mt LC(A) A  &mt LG(LS(S)) S  &kp D            &kp F        &kp G                       &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &mt LC(Z) Z  &mt LC(X) X      &mt LC(C) C      &mt LC(V) V  &kp B                       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
 &kp LGUI        &kp LALT     &lt 3 TAB        &mt LCTRL SPACE  &mo 4                   &lt 1 RIGHT_ALT  &lt 2 ENTER                                        &kp LANG1
             >;
         };
