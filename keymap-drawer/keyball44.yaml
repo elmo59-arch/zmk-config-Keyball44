@@ -14,7 +14,7 @@ layers:
   - P
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: Ctl+A, h: A}
+  - {t: A, h: Ctl+A}
   - {t: S, h: Gui+Sft+S}
   - D
   - F
@@ -26,7 +26,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Ctl+Z, h: Z}
+  - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
