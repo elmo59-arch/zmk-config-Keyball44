@@ -62,6 +62,22 @@
         };
     };
 
+    macros {
+        zoomin: zoomin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &mmv MOVE_UP>;
+            label = "ZOOMIN";
+        };
+
+        zoomout: zoomout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &mmv MOVE_DOWN>;
+            label = "ZOOMOUT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,7 +94,7 @@
         number_layer {
             label = "NUM";
             bindings = <
-&none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                        &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0     &none
+&none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                        &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0     &kp MINUS
 &kp BACKSPACE   &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT      &kp TILDE                           &kp GRAVE     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(L))  &kp LA(EQUAL)    &none
 &kp LEFT_SHIFT  &kp F2        &kp F4        &kp LA(SEMI)  &kp LC(LS(V))  &kp LC(RS(DOWN_ARROW))              &kp LC(D)     &kp LC(R)        &kp LC(SPACE)      &kp LS(SPACE)  &kp LC(LS(END))  &kp RIGHT_SHIFT
 &trans          &kp LEFT_ALT  &trans        &trans        &trans                                     &trans  &trans                                                                            &kp LANG2
@@ -108,10 +124,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5               &kp N6                 &kp N7     &kp N8  &kp N9     &kp N0     &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &lt 5 G              &kp LC(K_SCROLL_UP)    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-&none   &none           &none           &none         &none      &none                &kp LC(K_SCROLL_DOWN)  &none      &none   &none      &none      &none
-&trans  &trans          &trans          &trans        &trans                  &trans  &trans                                                          &none
+&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5               &kp N6             &kp N7     &kp N8  &kp N9     &kp N0     &none
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &lt 5 G              &kp C_AC_ZOOM_IN   &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
+&none   &none           &none           &none         &none      &none                &kp C_AC_ZOOM_OUT  &none      &none   &none      &none      &none
+&trans  &trans          &trans          &trans        &trans                  &trans  &trans                                                      &none
             >;
         };
 
