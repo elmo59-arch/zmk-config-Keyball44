@@ -26,7 +26,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: Ctl+Z}
+  - Z
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
